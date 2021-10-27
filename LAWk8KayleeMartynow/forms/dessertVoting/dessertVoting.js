@@ -9,13 +9,12 @@ dessertVoting.onshow=function(){
       }
 }
 
-
 drpDesserts.onclick=function(s){
 // this 'if' kicks user out if they  just clicked on control 
 // but not on one item in the list.
     if (typeof(s) == "object")   
       return                    
-    else {  drpDesserts.value =s 
+    else {drpDesserts.value =s 
             lblPrompt.value=`You chose ${s} as your favorite dessert`
       }
 }
